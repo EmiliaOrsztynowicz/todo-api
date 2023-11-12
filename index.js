@@ -21,6 +21,7 @@ const checkIfFound = (req, res, next) => {
 app.use(bodyParser.json())
 
 app.get("/todos", (req, res) => {
+    console.log(tasks)
     res.send(tasks)
 })
 
